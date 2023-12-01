@@ -9,9 +9,9 @@ df = pd.read_csv('../data/basic1.csv')
 
 # print(df['f2'].value_counts())
 df = df[~df['f1'].isnull()]
-# # print(df)
+# print(df)
 
 df2 = df.groupby(['city','f2']).sum()
 # print(df2)
 
-print(df2.iloc[0]['f1'])
+print(df2.iloc[5]['f1'])
