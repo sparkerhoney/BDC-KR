@@ -23,3 +23,4 @@ df['f1'] = df['f1'].fillna(df['f1']).mode()[0]
 df['y'] = power_transform(df[['f1']])
 # print(df['y'].head())
 
+
